@@ -68,6 +68,8 @@
 
 }
 
+
+
 ul li{
   color: transparent;
 
@@ -136,4 +138,20 @@ ul li{
 }
 .hide {
   display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+  div.sidenav {
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 20px;
+		left: 10px;
+		overflow-x: hidden;
+		margin-top: 25%!important;
+		margin-left: 55%!important;
+	}
+
 }
