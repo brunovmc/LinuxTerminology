@@ -1,0 +1,109 @@
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.displayNone{
+  display: none;
+}
+
+.transparent{
+  opacity: 0;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.header{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  margin-top: 5%;
+  font-size: 3em;
+}
+
+.content{
+
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: black!important;
+  display: inline-block;
+
+}
+
+.content:last-of-type{
+  margin-bottom: 5%;
+}
+
+.list{
+
+
+}
+
+
+ul li{
+  color: transparent;
+
+}
+
+
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 70%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-left: 10%;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+	margin-bottom: 5%;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+	width: 70%;
+	margin-left: 10%;
+}
+
+
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+.show {
+  transition: opacity 400ms;
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
