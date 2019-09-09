@@ -93,6 +93,23 @@ ul li{
 	margin-left: 10%;
 }
 
+#myUL li a.link{
+	color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+	border: none;
+	margin-top: 0;
+	background-color: white;
+	padding: 0;
+
+	font-size: inherit;
+
+	display: inline;
+	width: 100%;
+	margin-left: 0;
+}
+
+
 
 
 #myUL li a:hover:not(.header) {
