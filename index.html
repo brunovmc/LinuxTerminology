@@ -138,6 +138,22 @@
             <h2>partitions and filesystem</h2>
         </div>
       </li>
+      <li id="InitialRAMDisk">Initial RAM Disk<a href="#InitialRAMDisk"  class="clickable-heading">Initial RAM Disk</a>
+        <div class="content hide">
+            <h2>Initial RAM Disk</h2>
+            <p>RAM (Random Access Memory)</p>
+            <p>The initramfs filesystem image contains programs and binary files that perform all actions needed to mount the proper root filesystem,</p>
+            <p>like providing kernel functionality for the needed filesystem and device drivers for mass storage controllers with a facility called udev (for user device),</p>
+            <p>which is responsible for figuring out which devices are present, locating the device drivers they need to operate properly, and loading them.</p>
+            <p> After the root filesystem has been found, it is checked for errors and mounted.</p>
+            <p>The mount program instructs the operating system that a filesystem is ready for use,</p>
+            <p>and associates it with a particular point in the overall hierarchy of the filesystem (the mount point).</p>
+            <p>If this is successful, the initramfs is cleared from RAM and the init program on the root filesystem (/sbin/init) is executed.</p>
+            <p>init handles the mounting and pivoting over to the final real root filesystem.
+            <p>If special hardware drivers are needed before the mass storage can be accessed, they must be in the initramfs image.</p>
+            <img src="InitialRAMDisk.jpg" alt="">
+        </div>
+      </li>
       <li id="uefi">UEFI<a href="#uefi"  class="clickable-heading">UEFI</a>
         <div class="content hide">
             <h2>UEFI (Unified Extensible Firmware Interface)</h2>
