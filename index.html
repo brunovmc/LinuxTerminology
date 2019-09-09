@@ -9,10 +9,11 @@
   <body>
     <div class="header">
       <h1>Linux terminology</h1>
+      <input type="text" id="myInput" onkeyup="searchList()" placeholder="Search for terms.." title="Type in a name">
+      <button onclick="sortListDir()">order</button>
     </div>
 
-    <input type="text" id="myInput" onkeyup="searchList()" placeholder="Search for terms.." title="Type in a name">
-    <button onclick="sortListDir()">order</button>
+
 
 
     <ul class="list" id=myUL>
@@ -20,6 +21,10 @@
         <div class="content hide">
             <h2>kernel</h2>
             <p>glue between hardware and applications</p>
+            <p>The boot loader loads both the kernel and an initial RAM–based file system (initramfs) into memory, so it can be used directly by the kernel.</p>
+            <p>When the kernel is loaded in RAM, it immediately initializes and configures the computer’s memory and also configures all the hardware attached to the system.</p>
+            <p> This includes all processors, I/O subsystems, storage devices, etc. The kernel also loads some necessary user space applications.</p>
+            <img src="kernel.jpg" alt="">
         </div>
       </li>
       <li id="distribution">distribution<a href="#distribution"  class="clickable-heading">distribution</a>
@@ -147,6 +152,7 @@
             <p>the terminals which run the command shells can be accessed using the ALT key plus a function key.
             <p>Most distributions start six text terminals and one graphics terminal starting with F1 or F2.
             <p> Within a graphical environment, switching to a text console requires pressing CTRL-ALT + the appropriate function key <b>(with F7 or F1 leading to the GUI)</b>.</p>
+            <img src="Text-ModeLogin.jpg" alt="">
         </div>
       </li>
       <li id="InitialRAMDisk">Initial RAM Disk<a href="#InitialRAMDisk"  class="clickable-heading">Initial RAM Disk</a>
