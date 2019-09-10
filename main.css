@@ -142,6 +142,9 @@ body{
 
 ul li{
   color: transparent;
+	/* position: sticky;
+	top: 18% */
+	background-color: cadetblue;
 
 }
 
