@@ -96,9 +96,10 @@ body{
 	position: sticky!important;
 	top: 0;
 	z-index: 1;
-	font-size: 3em;
+	font-size: 60px;
 	margin-left: 23%;
 	width: 80%;
+	transition: 0.2s;
 }
 
 .decoration{
@@ -192,14 +193,16 @@ ul li{
   cursor: pointer;
 	border: none;
 	margin-top: 0;
-	background-color: white;
+	background-color: inherit;
 	padding: 0;
-
 	font-size: inherit;
-
 	display: inline;
 	width: 100%;
 	margin-left: 0;
+}
+
+#myUL li a.link:hover{
+	background-color: inherit;
 }
 
 .bootProcess h2{
@@ -224,7 +227,7 @@ ul li{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
-  .sidenav .bootProcess{
+  .sidenav{
 		width: 100%;
 		position: fixed;
 		z-index: 1;
