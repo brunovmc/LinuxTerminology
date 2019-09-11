@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
     document.getElementById("inputTitle").style.fontSize = "28px";
       document.getElementById("inputTitle").style.margin = "0 0 0 60%";
       document.getElementById("myInput").style.width = "50%";
@@ -9,6 +9,7 @@ function scrollFunction() {
   } else {
     document.getElementById("inputTitle").style.fontSize = "60px";
       document.getElementById("inputTitle").style.margin = "0 0 0 23%";
+        document.getElementById("myInput").style.width = "70%";
 
   }
 }
