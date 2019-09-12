@@ -1,3 +1,4 @@
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -104,3 +105,23 @@ function toggleDocs(event) {
 }
 
 document.addEventListener('click', toggleDocs, true);
+
+
+
+
+function sidenav(event){
+
+  if (event.target && event.target.className == 'sidenav') {
+
+      var element = event.target;
+
+
+      if (element.style.display == "inline-block") {
+          element.style.display = "none";
+
+      } else {
+          element.style.display = "inline-block";
+      }
+  }
+}
+window.addEventListener('click', sidenav, true);

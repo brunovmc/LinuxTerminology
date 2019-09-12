@@ -141,10 +141,12 @@ body{
 	top: 20px;
 	left: 10px;
 	overflow-x: hidden;
-	margin-top: 7%;
+	margin-top: 6%;
 	border-radius: 40px;
 	margin-left: 82.6%;
 	border: 20px solid grey;
+	background-color: white;
+	display: block;
 }
 
 
@@ -181,7 +183,7 @@ ul li{
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1%; /* Prevent double borders */
+  margin-top: -0.9%; /* Prevent double borders */
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
@@ -230,6 +232,43 @@ ul li{
 .hide {
   display: none;
 }
+
+.buttonWrap{
+	position: fixed;
+}
+
+.buttonWrap button{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-right: 10%;
+}
+
+
+
+.sideButton{
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	text-align: center;
+	font-size: 40px;
+	border-radius: 40px;
+	margin-top: -35%;
+	margin-left: -75%;
+	border:2px solid black;
+
+}
+
+.sideButton:hover{
+	cursor: pointer;
+	transform: scale(0.95);
+}
+
+.sideButton:active{
+	transform: scale(0.9);
+}
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
