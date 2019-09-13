@@ -256,6 +256,30 @@
             <h2>UEFI (Unified Extensible Firmware Interface)</h2>
         </div>
       </li>
+      <li id="filesystemHierarchyStandard">Filesystem Hierarchy Standard (FHS)<a href="#filesystemHierarchyStandard"  class="clickable-heading">Filesystem Hierarchy Standard(FHS)</a>
+        <div class="content hide">
+            <h2>Filesystem Hierarchy Standard (FHS)</h2>
+            <img src="filesystemHierarchyStandard.jpg" alt="">
+
+
+            <p>Linux systems store their important files according to a standard layout called the Filesystem Hierarchy Standard (FHS),</p>
+            <p> which has long been maintained by The Linux Foundation.</p>
+            <p> Having a standard is designed to ensure that users, administrators, and developers can move between distributions without having to re-learn how the system is organized.</p>
+            <p>Linux uses the <strong>‘/’</strong> character to separate paths (unlike Windows, which uses ‘\’), and does not have drive letters.</p>
+            <p>Multiple drives and/or partitions are mounted as directories in the single filesystem.</p>
+            <p>Removable media such as USB drives and CDs and DVDs will show up as mounted at <strong>/run/media/yourusername/disklabel</strong> for recent Linux systems, or under /media for older distributions.</p>
+            <p>For example, if your username is student a USB pen drive labeled FEDORA might end up being found at <strong>/run/media/student/FEDORA</strong>,</p>
+            <p>and a file README.txt on that disc would be at <strong>/run/media/student/FEDORA/README.txt</strong>.</p>
+
+            <p>All Linux filesystem names are case-sensitive, so /boot, /Boot, and /BOOT represent three different directories (or folders).</p>
+            <p>Many distributions distinguish between core utilities needed for proper system operation and other programs, and place the latter in directories under /usr (think user).</p>
+            <p>To get a sense for how the other programs are organized,</p>
+            <p>find the /usr directory in the diagram from the previous page and compare the subdirectories with those that exist directly under the system root directory (/).</p>
+
+
+            <a class="link"href="https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf" target="_blank">More info</a>
+        </div>
+      </li>
       <li id="grub">GRUB<a href="#grub"  class="clickable-heading">GRUB</a>
         <div class="content hide">
             <h2>GRUB (GRand Unified Bootloader)</h2>
