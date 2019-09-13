@@ -149,7 +149,24 @@ body{
 	display: block;
 }
 
+#myUL #partitionTable .tableHeader{
+	background-color: #003f60;
+	height: 40px;
+	width: 440px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
 
+}
+
+#myUL #partitionTable .tableColumn{
+	background-color:#e8e8e8;
+	height: 40px;
+	width: 440px;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
 
 ul li{
   color: transparent;

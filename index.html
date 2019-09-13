@@ -185,6 +185,42 @@
       <li id="partitions">partitions and filesystem<a href="#partitions"  class="clickable-heading">partitions and filesystem</a>
         <div class="content hide">
             <h2>partitions and filesystem</h2>
+
+            <p> A partition is a physically contiguous section of a disk, or what appears to be so in some advanced setups.</p>
+            <p>A filesystem is a method of storing/finding files on a hard disk (usually in a partition).</p>
+            <p>One can think of a partition as a container in which a filesystem resides, although in some circumstances,</p>
+            <p>a filesystem can span more than one partition if one uses symbolic links.</p>
+
+            <table id="partitionTable">
+              <tr class="tableRow">
+                <td class="tableHeader"></td>
+                <td class="tableHeader">Windows</td>
+                <td class="tableHeader">Linux</td>
+              </tr>
+              <tr class="tableRow">
+                <td class="tableColumn">Partition</td>
+                <td class="tableColumn">Disk 1</td>
+                <td class="tableColumn">/dev/sda1</td>
+              </tr>
+              <tr class="tableRow">
+                <td class="tableColumn">Filesystem Type</td>
+                <td class="tableColumn">NTFS/VFAT</td>
+                <td class="tableColumn">EXT3/EXT4/XFS/BTRFS...</td>
+              </tr>
+              <tr class="tableRow">
+                <td class="tableColumn">Mounting Parameters</td>
+                <td class="tableColumn">DriveLetter</td>
+                <td class="tableColumn">MountPoint</td>
+              </tr>
+              <tr class="tableRow">
+                <td class="tableColumn">Base Folder (where OS is stored)</td>
+                <td class="tableColumn">C:\</td>
+                <td class="tableColumn">/</td>
+              </tr>
+            </table>
+
+
+
         </div>
       </li>
       <li id="Text-ModeLogin">Text-Mode Login<a href="#Text-ModeLogin"  class="clickable-heading">Text-Mode Login</a>
