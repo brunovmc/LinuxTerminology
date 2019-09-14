@@ -21,7 +21,7 @@ function scrollFunction() {
   }else if(screen.width <= 900){
 
       console.log("else if")
-      document.getElementById("myInput").style.width = "50%";
+      document.getElementById("myInput").style.width = "77%";
 
   }
 }
