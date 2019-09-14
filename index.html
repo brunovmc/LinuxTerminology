@@ -53,7 +53,9 @@
   <div class="inputTitle" id="inputTitle">
     <h1>Linux Terminology</h1>
     <input type="text" id="myInput" onkeyup="searchList()" placeholder="Search for term.." title="Type in a name">
-    <button onclick="sortListDir()">order</button>
+
+    <button class="roundBtn" onclick="sortListDir()">order</button>
+    <button class="roundBtn" onclick="document.getElementById('myInput').value = ''">clear</button>
   </div>
 
 
@@ -287,11 +289,6 @@
       <li id="uefi">UEFI<a href="#uefi"  class="clickable-heading">UEFI</a>
         <div class="content hide">
             <h2>UEFI (Unified Extensible Firmware Interface)</h2>
-        </div>
-      </li>
-      <li id="initramfs">initramfs<a href="#initramfs"  class="clickable-heading">initramfs</a>
-        <div class="content hide">
-            <h2>initramfs</h2>
         </div>
       </li>
       <li id="initramfs">initramfs<a href="#initramfs"  class="clickable-heading">initramfs</a>
