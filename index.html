@@ -86,27 +86,27 @@
       <li id="MasterBootRecord">Master Boot Record (MBR)<a href="#MasterBootRecord"  class="clickable-heading">MBR</a>
         <div class="content hide">
             <h2>Master Boot Record (MBR) </h2>
-            <p>Once the POST is completed, the system control passes from the BIOS to the boot loader.</p>
-            <p> The boot loader is usually stored on one of the hard disks in the system,</p>
-            <p> either in the boot sector (for traditional BIOS/MBR systems) or the EFI partition (for more recent (Unified) Extensible Firmware Interface or EFI/<a href="#uefi" class="link">UEFI</a> systems).</p>
-            <p> Up to this stage, the machine does not access any mass storage media.</p>
-            <p> Thereafter, information on date, time, and the most important peripherals are loaded from the CMOS values</p>
-            <p>(after a technology used for the battery-powered memory store which allows the system to keep track of the date and time even when it is powered off).</p>
-            <p>A number of boot loaders exist for Linux; the most common ones are</p>
-            <p> GRUB (for GRand Unified Boot loader),</p>
-            <p>ISOLINUX (for booting from removable media),</p>
-            <p>and DAS U-Boot (for booting on embedded devices/appliances).</p>
-            <p>When booting Linux, the boot loader is responsible for loading the kernel image and the initial RAM disk or filesystem</p>
-            <p>(which contains some critical files and device drivers needed to start the system) into memory.</p>
+            <p>Once the POST is completed, the system control passes from the BIOS to the boot loader.
+             The boot loader is usually stored on one of the hard disks in the system,
+             either in the boot sector (for traditional BIOS/MBR systems) or the EFI partition (for more recent (Unified) Extensible Firmware Interface or EFI/<a href="#uefi" class="link">UEFI</a> systems).
+             Up to this stage, the machine does not access any mass storage media.
+             Thereafter, information on date, time, and the most important peripherals are loaded from the CMOS values
+            (after a technology used for the battery-powered memory store which allows the system to keep track of the date and time even when it is powered off).
+            A number of boot loaders exist for Linux; the most common ones are
+             GRUB (for GRand Unified Boot loader),
+            ISOLINUX (for booting from removable media),
+            and DAS U-Boot (for booting on embedded devices/appliances).
+            When booting Linux, the boot loader is responsible for loading the kernel image and the initial RAM disk or filesystem
+            (which contains some critical files and device drivers needed to start the system) into memory.</p>
             <img src="masterBootRecord.jpg" alt="">
         </div>
       </li>
       <li id="bootLoader">boot loader<a href="#bootLoader"  class="clickable-heading">boot loader</a>
         <div class="content hide">
             <h2>boot loader</h2>
-            <p>A boot loader is a program responsible for loading the Linux kernel with optional kernel parameters and the Linux initial RAM disk, known as initrd.</p>
-            <p>Linux kernel is the core of the Linux operating system, and it starts the init (short for initialization) process, or an init replacement such as systemd, immediately after being loaded.</p>
-            <p>The Linux initial RAM disk provides a temporary storage space for loading critical files into memory before the real root file system can be mounted.</p>
+            <p>A boot loader is a program responsible for loading the Linux kernel with optional kernel parameters and the Linux initial RAM disk, known as initrd.
+            Linux kernel is the core of the Linux operating system, and it starts the init (short for initialization) process, or an init replacement such as systemd, immediately after being loaded.
+            The Linux initial RAM disk provides a temporary storage space for loading critical files into memory before the real root file system can be mounted.</p>
             <img src="bootLoader.jpg" alt="">
         </div>
       </li>
@@ -123,6 +123,23 @@
       <li id="xWindowSystem">X Window system<a href="#xWindowSystem"  class="clickable-heading">X Window system</a>
         <div class="content hide">
             <h2>X Window system</h2>
+          <p> Generally, in a Linux desktop system, the X Window System is loaded as one of the final steps in the boot process.
+            A service called the display manager keeps track of the displays being provided and loads the X server
+            (so-called, because it provides graphical services to applications, sometimes called X clients).
+            The display manager also handles graphical logins and starts the appropriate desktop environment after a user logs in.
+            X Window System is a rather old system; it dates back to the mid 1980s and, as such, has certain deficiencies on modern systems
+            (for example, with security), as it has been stretched rather far from its original purposes. A newer system, known as <a href="#Wayland" class="link">Wayland</a>,
+            is gradually superseding it and was adopted as the default display system in Fedora 25.</p>
+            <p>A desktop environment consists of a session manager, which starts and maintains the components of the graphical session,
+             and the window manager, which controls the placement and movement of windows, window title-bars, and controls.
+             Although these can be mixed, generally a set of utilities, session manager, and window manager are used together as a unit,
+             and together provide a seamless desktop environment.
+             If the display manager is not started by default in the default runlevel, you can start X a different way, after logging on to a text-mode console,
+             by running startx from the command line. Or, you can start the display manager (gdm, lightdm, kdm, xdm, etc.) manually from the command line.
+             This differs from running startx as the display managers will project a sign in screen.
+            </p>
+            <img src="xWindow.jpg" alt="">
+
         </div>
       </li>
       <li id="GUI">GUI (Graphical User Interface)<a href="#GUI"  class="clickable-heading">GUI</a>
@@ -142,18 +159,26 @@
             <p>example of a bash session</p>
         </div>
       </li>
-      <li id="desktopEnvironment">desktop environment DE<a href="#desktopEnvironment"  class="clickable-heading">desktop environment</a>
+      <li id="desktopEnvironment">desktop environment (DE)<a href="#desktopEnvironment"  class="clickable-heading">desktop environment</a>
         <div class="content hide">
-            <h2>desktop environment</h2>
-            <p>, a desktop environment (DE) is an implementation of the desktop metaphor made of a bundle of programs running on top of a computer operating system,</p>
-            <p> which share a common graphical user interface (GUI), sometimes described as a graphical shell.</p>
-            <p>The desktop environment was seen mostly on personal computers until the rise of mobile computing.</p>
-            <p>Desktop GUIs help the user to easily access and edit files, while they usually do not provide access to all of the features found in the underlying operating system.</p>
-            <p>Instead, the traditional command-line interface (CLI) is still used when full control over the operating system is required.</p>
-            <p>A desktop environment typically consists of icons, windows, toolbars, folders, wallpapers and desktop widgets (see Elements of graphical user interfaces and WIMP).</p>
-            <p>A GUI might also provide drag and drop functionality and other features that make the desktop metaphor more complete.
-            <p> A desktop environment aims to be an intuitive way for the user to interact with the computer using concepts which are similar to those used when interacting with the physical world,</p>
-            <p> such as buttons and windows.</p>
+            <h2>desktop environment (DE)</h2>
+            <p>A desktop environment (DE) is an implementation of the desktop metaphor made of a bundle of programs running on top of a computer operating system,
+             which share a common graphical user interface (GUI), sometimes described as a graphical shell.
+            The desktop environment was seen mostly on personal computers until the rise of mobile computing.
+            Desktop GUIs help the user to easily access and edit files, while they usually do not provide access to all of the features found in the underlying operating system.
+            Instead, the traditional command-line interface (CLI) is still used when full control over the operating system is required.
+            A desktop environment typically consists of icons, windows, toolbars, folders, wallpapers and desktop widgets (see Elements of graphical user interfaces and WIMP).
+            A GUI might also provide drag and drop functionality and other features that make the desktop metaphor more complete.
+             A desktop environment aims to be an intuitive way for the user to interact with the computer using concepts which are similar to those used when interacting with the physical world,
+             such as buttons and windows.</p>
+        </div>
+      </li>
+      <li id="openSUSE">openSUSE<a href="#openSUSE" class="clickable-heading">openSUSE</a>
+        <div class="content hide">
+            <h2>openSUSE</h2>
+            how to instal openSUSE
+            <iframe width="1080" height="608" src="https://www.youtube.com/embed/iPGbtCj5pss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </div>
       </li>
       <li id="commandLine">command line<a href="#commandLine" class="clickable-heading">command line</a>
@@ -190,6 +215,9 @@
             <p>A filesystem is a method of storing/finding files on a hard disk (usually in a partition).</p>
             <p>One can think of a partition as a container in which a filesystem resides, although in some circumstances,</p>
             <p>a filesystem can span more than one partition if one uses symbolic links.</p>
+
+            <p>A partition is a logical part of the disk</p>
+            <p>A filesystem is a method of storing/finding files on a hard disk.</p>
 
             <table id="partitionTable">
               <tr class="tableRow">
@@ -255,6 +283,29 @@
         <div class="content hide">
             <h2>UEFI (Unified Extensible Firmware Interface)</h2>
         </div>
+      </li>
+      <li id="initramfs">initramfs<a href="#initramfs"  class="clickable-heading">initramfs</a>
+        <div class="content hide">
+            <h2>initramfs</h2>
+        </div>
+      </li>
+      <li id="initramfs">initramfs<a href="#initramfs"  class="clickable-heading">initramfs</a>
+        <div class="content hide">
+            <h2>initramfs</h2>
+        </div>
+      </li>
+      <li id="Wayland">Wayland<a href="#Wayland"  class="clickable-heading">Wayland</a>
+        <div class="content hide">
+            <h2>Wayland</h2>
+            Wayland is intended as a simpler replacement for X, easier to develop and maintain. GNOME and KDE are expected to be ported to it.
+              <a href="https://wayland.freedesktop.org/" target="_blank" class="link">walyland website</a>
+        </div>
+      </li>
+      <li id="CentOS">CentOS<a href="#CentOS"  class="clickable-heading">CentOS</a>
+        <div class="content hide">
+            <h2>CentOS</h2>
+            how to instal CentOS
+            <iframe width="1080" height="608" src="https://www.youtube.com/embed/_D7M-cCslB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
       </li>
       <li id="filesystemHierarchyStandard">Filesystem Hierarchy Standard (FHS)<a href="#filesystemHierarchyStandard"  class="clickable-heading">Filesystem Hierarchy Standard(FHS)</a>
         <div class="content hide">
