@@ -4,8 +4,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
     document.getElementById("inputTitle").style.fontSize = "28px";
-      document.getElementById("inputTitle").style.margin = "0 0 0 60%";
-      document.getElementById("myInput").style.width = "50%";
+      document.getElementById("inputTitle").style.margin = "0 0 0 65%";
+      document.getElementById("myInput").style.width = "40%";
 
   } else {
     document.getElementById("inputTitle").style.fontSize = "60px";
@@ -37,6 +37,7 @@ function searchList() {
 function sortListDir() {
   var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
   list = document.getElementById("myUL");
+  var text = myInput.innerHTML;
   switching = true;
   // Set the sorting direction to ascending:
   dir = "asc";

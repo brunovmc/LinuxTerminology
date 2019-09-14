@@ -235,6 +235,20 @@ ul li{
 	font-size: 1.1em;
 }
 
+.roundBtn{
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+.roundBtn:hover{
+	transform: scale(0.95);
+}
+
+.roundBtn:focus{
+	outline: none;
+}
+
+
 .bootProcess h2{
 	background-color: white;
 	padding-left: 14%;
@@ -294,7 +308,7 @@ ul li{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
-  .sidenav{
+  #sidenav{
 		width: 100%;
 		position: fixed;
 		z-index: 1;
