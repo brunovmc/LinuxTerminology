@@ -18,10 +18,15 @@ function scrollFunction() {
           document.getElementById("myInput").style.width = "70%";
 
     }
-  }else{
-    document.getElementById("myInput").style.width = "100%";
+  }else if(screen.width <= 900){
+
+      console.log("else if")
+      document.getElementById("myInput").style.width = "50%";
+
   }
 }
+
+
 
 
 function searchList() {

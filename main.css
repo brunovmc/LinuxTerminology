@@ -336,6 +336,9 @@ ul li{
 		margin-left: 55%!important;
 	}
 
-
+	#filesystemHierarchyimage{
+		transform: scale(0.6);
+    margin-left: -30%;
+	}
 
 }
