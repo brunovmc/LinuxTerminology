@@ -310,19 +310,40 @@ ul li{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
-
+	.header{
+		margin-top:0;
+	}
 	.decoration{
 		transform: scale(0.6);
 		margin-left: -20.8%;
-		margin-top: 10%;
+		margin-top: -4%;
 	}
 
 	.title{
-		transform: scale(0.6);
+		transform: scale(0.5);
+		width: 300%;
+		margin-left: 8%;
+	}
+
+	#myInput{
+		width:77%%;
+		display: inline;
 	}
 
 	#myUL  li {
 		width: 261%;
+	}
+	#myUL li a{
+		width: 80%;
+	}
+
+	.content{
+		width: 80%;
+	}
+
+	#bashImage{
+			transform: scale(0.7);
+			margin-left: -25%;
 	}
 
   #sidenav{

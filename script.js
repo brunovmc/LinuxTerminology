@@ -6,7 +6,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if(screen.width >= 900){
-    
+
     if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
       document.getElementById("inputTitle").style.fontSize = "28px";
         document.getElementById("inputTitle").style.margin = "0 0 0 65%";
@@ -130,11 +130,11 @@ function sidenav(event){
       var element = event.target;
 
 
-      if (element.style.display == "inline-block") {
-          element.style.display = "none";
+      if (element.style.display == "none") {
+          element.style.display = "inline-block";
 
       } else {
-          element.style.display = "inline-block";
+          element.style.display = "none";
       }
   }
 }
