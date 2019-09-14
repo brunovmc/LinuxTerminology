@@ -308,6 +308,12 @@ ul li{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
+
+	.decoration{
+		transform: scale(0.6);
+		margin-left: -20.8%;
+	}
+
   #sidenav{
 		width: 100%;
 		position: fixed;
@@ -317,6 +323,10 @@ ul li{
 		overflow-x: hidden;
 		margin-top: 25%!important;
 		margin-left: 55%!important;
+	}
+
+	#myUL li{
+		width: 124%!important;
 	}
 
 }
