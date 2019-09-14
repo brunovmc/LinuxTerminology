@@ -231,6 +231,10 @@ ul li{
 	background-color: inherit;
 }
 
+#myUL li p{
+	font-size: 1.1em;
+}
+
 .bootProcess h2{
 	background-color: white;
 	padding-left: 14%;
